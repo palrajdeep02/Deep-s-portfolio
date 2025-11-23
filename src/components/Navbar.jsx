@@ -10,16 +10,16 @@ const Navbar = () => {
                 <div className="flex justify-between h-16">
                     <div className="flex items-center">
                         <span className="text-xl font-bold text-gray-900 dark:text-white">
-                            Rajdeep<span className="text-neon-500">.</span>
+                            Rajdeep<span className="text-neon-700 dark:text-neon-500">.</span>
                         </span>
                     </div>
                     <div className="hidden md:flex items-center space-x-8">
-                        <a href="#home" className="text-gray-600 dark:text-gray-300 hover:text-neon-500 dark:hover:text-neon-500 font-medium transition-colors">Home</a>
+                        <a href="#home" className="text-gray-600 dark:text-gray-300 hover:text-neon-700 dark:hover:text-neon-500 font-medium transition-colors">Home</a>
                         <a href="#about" className="text-gray-600 dark:text-gray-300 hover:text-neon-500 dark:hover:text-neon-500 font-medium transition-colors">About</a>
                         <a href="#projects" className="text-gray-600 dark:text-gray-300 hover:text-neon-500 dark:hover:text-neon-500 font-medium transition-colors">Work</a>
                         <a href="#contact" className="text-gray-600 dark:text-gray-300 hover:text-neon-500 dark:hover:text-neon-500 font-medium transition-colors">Contact</a>
                         <ThemeToggle />
-                        <a href="#contact" className="px-4 py-2 border border-neon-500 text-neon-500 rounded-md font-medium hover:bg-neon-500 hover:text-dark-900 transition-all shadow-[0_0_10px_rgba(57,255,20,0.2)] hover:shadow-neon">
+                        <a href="#contact" className="px-4 py-2 border border-neon-700 dark:border-neon-500 text-neon-700 dark:text-neon-500 rounded-md font-medium hover:bg-neon-700 dark:hover:bg-neon-500 hover:text-white dark:hover:text-dark-900 transition-all shadow-[0_0_10px_rgba(13,128,0,0.2)] dark:shadow-[0_0_10px_rgba(57,255,20,0.2)] hover:shadow-neon">
                             Hire Me
                         </a>
                     </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
                         <ThemeToggle />
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-600 dark:text-gray-300 hover:text-neon-500 focus:outline-none"
+                            className="text-gray-600 dark:text-gray-300 hover:text-neon-700 dark:hover:text-neon-500 focus:outline-none"
                         >
                             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 {isOpen ? (
@@ -44,7 +44,7 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden glass border-t border-white/10">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <a href="#home" className="block px-3 py-2 text-gray-300 hover:text-neon-500 font-medium">Home</a>
+                        <a href="#home" className="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-neon-700 dark:hover:text-neon-500 font-medium">Home</a>
                         <a href="#about" className="block px-3 py-2 text-gray-300 hover:text-neon-500 font-medium">About</a>
                         <a href="#projects" className="block px-3 py-2 text-gray-300 hover:text-neon-500 font-medium">Work</a>
                         <a href="#contact" className="block px-3 py-2 text-gray-300 hover:text-neon-500 font-medium">Contact</a>

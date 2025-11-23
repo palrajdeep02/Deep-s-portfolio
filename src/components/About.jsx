@@ -11,7 +11,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
-                    <div className="w-20 h-1 bg-neon-500 mx-auto rounded-full shadow-neon"></div>
+                    <div className="w-20 h-1 bg-neon-700 dark:bg-neon-500 mx-auto rounded-full shadow-neon"></div>
                 </div>
 
                 <div className="flex flex-col md:flex-row gap-12 items-start">
@@ -24,7 +24,7 @@ const About = () => {
                         <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
                             I'm always exploring new technologies in the AI/ML space and looking for opportunities to apply my skills in challenging projects.
                         </p>
-                        <a href="#contact" className="inline-block px-6 py-3 border border-neon-500 text-neon-500 rounded-md font-medium hover:bg-neon-500 hover:text-dark-900 transition-all">
+                        <a href="#contact" className="inline-block px-6 py-3 border border-neon-700 dark:border-neon-500 text-neon-700 dark:text-neon-500 rounded-md font-medium hover:bg-neon-700 dark:hover:bg-neon-500 hover:text-white dark:hover:text-dark-900 transition-all">
                             Contact Me
                         </a>
                     </div>
@@ -33,7 +33,7 @@ const About = () => {
                         <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Tech Stack</h3>
                         <div className="flex flex-wrap gap-3">
                             {skills.map((skill, index) => (
-                                <span key={index} className="px-4 py-2 glass text-neon-400 border border-gray-300 dark:border-white/10 rounded-md font-medium text-sm hover:border-neon-500 transition-colors cursor-default">
+                                <span key={index} className="px-4 py-2 glass text-neon-700 dark:text-neon-400 border border-gray-300 dark:border-white/10 rounded-md font-medium text-sm hover:border-neon-700 dark:hover:border-neon-500 transition-colors cursor-default">
                                     {skill}
                                 </span>
                             ))}

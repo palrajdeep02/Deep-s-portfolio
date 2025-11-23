@@ -13,5 +13,30 @@ body {
 }
 
 .rgb-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#39ff14] via-[#4dff2e] to-[#39ff14] animate-rgb-flow;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-neon-700 via-neon-600 to-neon-700 dark:from-[#39ff14] dark:via-[#4dff2e] dark:to-[#39ff14] animate-rgb-flow;
+}
+
+/* Adaptive green colors for light/dark mode */
+.text-neon {
+  @apply text-neon-700 dark:text-neon-500;
+}
+
+.bg-neon {
+  @apply bg-neon-700 dark:bg-neon-500;
+}
+
+.border-neon {
+  @apply border-neon-700 dark:border-neon-500;
+}
+
+.hover\:text-neon:hover {
+  @apply text-neon-600 dark:text-neon-500;
+}
+
+.hover\:bg-neon:hover {
+  @apply bg-neon-600 dark:bg-neon-400;
+}
+
+.hover\:border-neon:hover {
+  @apply border-neon-600 dark:border-neon-500;
 }

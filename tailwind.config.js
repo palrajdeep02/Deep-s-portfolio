@@ -15,8 +15,10 @@ export default {
           50: '#ffffff',  // Light mode card
         },
         neon: {
-          500: '#39ff14', // Neon Green
-          400: '#4dff2e', // Lighter Neon
+          700: '#0d8000', // Dark Green for light mode
+          600: '#10a000', // Medium Dark Green for light mode  
+          500: '#39ff14', // Neon Green (dark mode)
+          400: '#4dff2e', // Lighter Neon (dark mode)
         },
       },
       animation: {

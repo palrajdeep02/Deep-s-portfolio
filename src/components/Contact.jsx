@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
-                    <div className="w-20 h-1 bg-neon-500 mx-auto rounded-full shadow-neon"></div>
+                    <div className="w-20 h-1 bg-neon-700 dark:bg-neon-500 mx-auto rounded-full shadow-neon"></div>
                     <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                         Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
                     </p>
@@ -22,7 +22,7 @@ const Contact = () => {
                                     id="name"
                                     name="name"
                                     required
-                                    className="w-full px-4 py-3 rounded-md border border-gray-300 dark:border-white/10 bg-white dark:bg-dark-900/50 text-gray-900 dark:text-white focus:border-neon-500 focus:ring-1 focus:ring-neon-500 outline-none transition-all placeholder-gray-400 dark:placeholder-gray-600"
+                                    className="w-full px-4 py-3 rounded-md border border-gray-300 dark:border-white/10 bg-white dark:bg-dark-900/50 text-gray-900 dark:text-white focus:border-neon-700 dark:focus:border-neon-500 focus:ring-1 focus:ring-neon-700 dark:focus:ring-neon-500 outline-none transition-all placeholder-gray-400 dark:placeholder-gray-600"
                                     placeholder="Enter your name"
                                 />
                             </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                             <div className="text-right">
                                 <button
                                     type="submit"
-                                    className="px-8 py-3 bg-neon-500 text-dark-900 rounded-md font-bold hover:bg-neon-400 transition-all shadow-[0_0_15px_rgba(57,255,20,0.4)] hover:shadow-neon transform hover:-translate-y-0.5"
+                                    className="px-8 py-3 bg-neon-700 dark:bg-neon-500 text-white dark:text-dark-900 rounded-md font-bold hover:bg-neon-600 dark:hover:bg-neon-400 transition-all shadow-[0_0_15px_rgba(13,128,0,0.4)] dark:shadow-[0_0_15px_rgba(57,255,20,0.4)] hover:shadow-neon transform hover:-translate-y-0.5"
                                 >
                                     Send Message
                                 </button>
