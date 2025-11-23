@@ -14,12 +14,14 @@ const Contact = () => {
 
                 <div className="max-w-3xl mx-auto glass rounded-xl shadow-lg border border-white/10 overflow-hidden">
                     <div className="p-8 md:p-10">
-                        <form className="space-y-6">
+                        <form action="https://formspree.io/f/xpwnkrjg" method="POST" className="space-y-6">
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Name</label>
                                 <input
                                     type="text"
                                     id="name"
+                                    name="name"
+                                    required
                                     className="w-full px-4 py-3 rounded-md border border-white/10 bg-dark-900/50 text-white focus:border-neon-500 focus:ring-1 focus:ring-neon-500 outline-none transition-all placeholder-gray-600"
                                     placeholder="Enter your name"
                                 />
@@ -29,6 +31,8 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
+                                    required
                                     className="w-full px-4 py-3 rounded-md border border-white/10 bg-dark-900/50 text-white focus:border-neon-500 focus:ring-1 focus:ring-neon-500 outline-none transition-all placeholder-gray-600"
                                     placeholder="Enter your email"
                                 />
@@ -37,6 +41,8 @@ const Contact = () => {
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Message</label>
                                 <textarea
                                     id="message"
+                                    name="message"
+                                    required
                                     rows="5"
                                     className="w-full px-4 py-3 rounded-md border border-white/10 bg-dark-900/50 text-white focus:border-neon-500 focus:ring-1 focus:ring-neon-500 outline-none transition-all placeholder-gray-600"
                                     placeholder="Enter your message"
