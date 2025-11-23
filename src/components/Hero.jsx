@@ -1,0 +1,61 @@
+import React from 'react';
+
+const Hero = () => {
+    return (
+        <section id="home" className="pt-24 pb-12 md:pt-32 md:pb-20 bg-dark-900 overflow-hidden relative">
+            {/* Background Glow */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-neon-500/20 rounded-full blur-[100px] -z-10"></div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col md:flex-row items-center justify-between">
+                    <div className="md:w-1/2 mb-10 md:mb-0 z-10">
+                        <h2 className="text-neon-500 font-medium mb-2 tracking-wide">HELLO, I'M</h2>
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                            Rajdeep <span className="text-neon-500">Pal</span>
+                        </h1>
+                        <h3 className="text-2xl md:text-3xl text-gray-300 mb-6 font-light">
+                            AI Embeddings & <span className="text-white font-medium">Web Development</span>
+                        </h3>
+                        <p className="text-lg text-gray-400 mb-8 max-w-lg leading-relaxed">
+                            Specializing in building intelligent web applications by bridging the gap between AI/ML and modern frontend technologies.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <a href="#projects" className="px-8 py-3 bg-neon-500 text-dark-900 rounded-md font-bold hover:bg-neon-400 transition-all shadow-[0_0_15px_rgba(57,255,20,0.4)] hover:shadow-neon text-center">
+                                View My Work
+                            </a>
+                            <a href="#contact" className="px-8 py-3 glass text-white border border-white/20 rounded-md font-medium hover:bg-white/10 transition-colors text-center">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center relative">
+                        <div className="relative w-full max-w-md aspect-square">
+                            <div className="absolute inset-0 bg-neon-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+                            <div className="relative glass p-8 rounded-2xl border border-white/10 h-full flex flex-col justify-center items-center backdrop-blur-xl">
+                                <div className="w-32 h-32 bg-dark-800 rounded-full mb-6 flex items-center justify-center text-4xl border-2 border-neon-500 shadow-neon">
+                                    👨‍💻
+                                </div>
+                                <h3 className="text-2xl font-bold text-white mb-2">Rajdeep Pal</h3>
+                                <p className="text-neon-500 mb-6 font-mono text-sm">soultaker0210@gmail.com</p>
+                                <div className="flex space-x-4">
+                                    {/* Social Icons Placeholder */}
+                                    <div className="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:text-neon-500 hover:border-neon-500 border border-transparent transition-all cursor-pointer">
+                                        GH
+                                    </div>
+                                    <div className="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:text-neon-500 hover:border-neon-500 border border-transparent transition-all cursor-pointer">
+                                        LI
+                                    </div>
+                                    <div className="w-10 h-10 glass rounded-full flex items-center justify-center text-white hover:text-neon-500 hover:border-neon-500 border border-transparent transition-all cursor-pointer">
+                                        TW
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Hero;
