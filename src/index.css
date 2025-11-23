@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans antialiased text-gray-900 bg-dark-100 dark:text-white dark:bg-dark-900 transition-colors duration-300;
+}
+
+.glass {
+  @apply bg-white/80 dark:bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10;
+}
+
+.rgb-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#39ff14] via-[#4dff2e] to-[#39ff14] animate-rgb-flow;
+}
