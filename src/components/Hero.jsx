@@ -33,7 +33,7 @@ const Hero = () => {
                         <div className="relative w-full max-w-md aspect-square">
                             <div className="absolute inset-0 bg-neon-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
                             <div className="relative glass p-8 rounded-2xl border border-white/10 h-full flex flex-col justify-center items-center backdrop-blur-xl">
-                                <div className="w-48 h-48 rounded-full mb-6 flex items-center justify-center border-4 border-neon-500 shadow-neon overflow-hidden">
+                                <div className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-6 flex items-center justify-center border-4 border-neon-500 shadow-neon overflow-hidden shrink-0">
                                     <img src={profileImg} alt="Rajdeep Pal" className="w-full h-full object-cover" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-2">Rajdeep Pal</h3>
