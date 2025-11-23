@@ -23,12 +23,12 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-20 bg-dark-900">
+        <section id="projects" className="py-20 bg-dark-100 dark:bg-dark-900 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Featured Work</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Work</h2>
                     <div className="w-20 h-1 bg-neon-500 mx-auto rounded-full shadow-neon"></div>
-                    <p className="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                         Showcasing my research and development projects in AI and Web Technologies.
                     </p>
                 </div>
@@ -36,14 +36,14 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <div key={index} className="glass rounded-xl overflow-hidden hover:border-neon-500 transition-all group hover:shadow-[0_0_20px_rgba(57,255,20,0.15)]">
-                            <div className="h-48 bg-dark-800 w-full flex items-center justify-center text-gray-600 group-hover:text-neon-500 transition-colors border-b border-white/5">
+                            <div className="h-48 bg-gray-200 dark:bg-dark-800 w-full flex items-center justify-center text-gray-400 dark:text-gray-600 group-hover:text-neon-500 transition-colors border-b border-gray-300 dark:border-white/5">
                                 <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                 </svg>
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-neon-500 transition-colors">{project.title}</h3>
-                                <p className="text-gray-400 mb-4 line-clamp-3 text-sm">
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-neon-500 transition-colors">{project.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3 text-sm">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
@@ -53,7 +53,7 @@ const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-white font-medium hover:text-neon-500 inline-flex items-center transition-colors">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-gray-900 dark:text-white font-medium hover:text-neon-500 inline-flex items-center transition-colors">
                                     View Project
                                     <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

@@ -5,9 +5,13 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans antialiased text-white bg-dark-900;
+  @apply font-sans antialiased text-gray-900 bg-dark-100 dark:text-white dark:bg-dark-900 transition-colors duration-300;
 }
 
 .glass {
-  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  @apply bg-white/80 dark:bg-white/5 backdrop-blur-lg border border-gray-200 dark:border-white/10;
+}
+
+.rgb-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#39ff14] via-[#00ffff] to-[#ff00ff] animate-rgb-flow;
 }
